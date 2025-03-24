@@ -617,7 +617,8 @@ fn device_id(name: &str) -> String {
 
 pub(crate) struct SpotifydConfig {
     pub(crate) cache: Option<Cache>,
-    pub(crate) oauth_cache: Option<Cache>,
+    pub(crate) oauth_cache: Option<Cache>, // Bu satırı değiştirin
+    pub(crate) token_path: Option<String>, // Yeni alan ekleyin
     pub(crate) backend: Option<String>,
     pub(crate) audio_device: Option<String>,
     pub(crate) audio_format: LSAudioFormat,
